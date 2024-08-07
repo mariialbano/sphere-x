@@ -39,7 +39,17 @@ export default function Home() {
           </TabsContent>
           
           <TabsContent value="registrar">
-            <p>criar conta</p>
+            <form action="" className="space-y-2">
+                <Label htmlFor="nome">nome</Label>
+                <Input id="nome" />
+                <Label htmlFor="bio">bio</Label>
+                <Input id="bio" type="text" />
+                <Label htmlFor="email">email</Label>
+                <Input id="email" />
+                <Label htmlFor="senha">senha</Label>
+                <Input id="senha" type="password" />
+                <Button type="submit">criar conta</Button>
+              </form>
           </TabsContent>
         
         </Tabs>
